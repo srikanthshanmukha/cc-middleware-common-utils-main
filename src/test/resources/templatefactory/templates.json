@@ -1,0 +1,33 @@
+{
+	"templates": [
+		{
+			"id": "template 1",
+			"description": "Template 1 description",
+			"sections": [
+				{
+					"sortOrder": 15,
+					"stencil": "This is the second statement: 1 == {{p1}}",
+					"metadata": {
+						"TARGET": "DB2_DATA_QUEUE",
+						"SOME_OTHER_META_DATA": "some value"
+					},
+					"requiredParameters": [
+						"p1"
+					]
+				},
+				{
+					"sortOrder": 10,
+					"stencil": "This is the first statement: 1 == {{p5}} and 2 == {{p7}}",
+					"metadata": {
+						"TARGET": "DB2_DATA_QUEUE",
+						"SOME_OTHER_META_DATA": "some value"
+					},
+					"requiredParameters": [
+						"p5",
+						"p7"
+					]
+				}
+			]
+		}
+	]
+}
